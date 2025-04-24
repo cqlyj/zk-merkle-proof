@@ -7,3 +7,6 @@ setup-key:
 generate-key:
 	@snarkjs groth16 setup outputs/merkleProof.r1cs outputs/pot10.ptau outputs/merkleProof.zkey && \
 	snarkjs zkey export verificationkey outputs/merkleProof.zkey outputs/verification_key.json
+
+generate-witness:
+	@node outputs/merkleProof_js/generate_witness.js outputs/merkleProof_js/merkleProof.wasm inputs/input.json outputs/witness.wtns
