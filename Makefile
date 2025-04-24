@@ -10,3 +10,6 @@ generate-key:
 
 generate-witness:
 	@node outputs/merkleProof_js/generate_witness.js outputs/merkleProof_js/merkleProof.wasm inputs/input.json outputs/witness.wtns
+
+generate-proof:
+	@snarkjs groth16 prove outputs/merkleProof.zkey outputs/witness.wtns outputs/proof.json outputs/public.json
