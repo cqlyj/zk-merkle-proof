@@ -1,0 +1,9 @@
+{
+  "transactions": [
+    { "from": "Alice", "to": "Bob", "amount": 100 },
+    { "from": "Charlie", "to": "David", "amount": 50 },
+    { "from": "Eve", "to": "Frank", "amount": 75 },
+    { "from": "Grace", "to": "Heidi", "amount": 120 }
+  ],
+  "transactionIndex": 2
+}
